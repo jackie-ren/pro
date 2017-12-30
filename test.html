@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" url="js/jquery-2.2.3.js"></script>
+	<style type="text/css">
+		.test{height: 200px; background: #ccc;}
+		.test:after{content:"";display: inline-block;vertical-align: middle;height: 100%;}
+		.test1{height:auto;display: inline-block; vertical-align: middle; background: #aaa;}
+
+	</style>
+</head>
+<body>
+<div class="test">
+	<div class="test1">
+		<p>testtest</p>
+		<p>testtest</p>
+		<p>testtest</p>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	setTimeout(function(){
+		test(2,3);
+	},1000);
+	function test(arg0,arg1){
+		console.log(arg0,arg1);
+	}
+</script>
+</html>
